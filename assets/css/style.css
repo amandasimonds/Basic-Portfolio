@@ -3,6 +3,8 @@ body{
     background-image: url("../images/leaves.png")
 }
 
+/*Header, Main, and Nav Bar*/
+
 h1{
     font-family: 'Georgia';
     font-size: 25px;
@@ -84,8 +86,55 @@ h2{
     color: rgb(131, 177, 131);
 }
 
+/* About Me */
+
 #selfie{
     float: left;
     margin-right: 20px;
     margin-top: 10px;
 }
+
+/* Contact Form */
+
+.container{
+    line-height: 30px;
+    padding-right:25px;
+}
+
+#message{
+    max-height: 50px;
+    margin-bottom:2px;
+    width: 100%;
+    font-family: helvetica;
+    color: rgb(75, 74, 74);
+    font-size:13px;
+    letter-spacing: 1px;
+    padding: 10px;
+    border-top: 1px solid rgb(180, 180, 180);
+    border-right: 1px solid rgb(180, 180, 180);
+    border-left: 1px solid rgb(180, 180, 180);
+    border-bottom: 1px solid rgb(238, 238, 238);
+}
+
+#name, #email{
+    width: 100%;
+    font-family: helvetica;
+    color: rgb(75, 74, 74);
+    font-size:13px;
+    letter-spacing: 1px;
+    padding: 10px;
+    margin-bottom:10px;
+    border-top: 1px solid rgb(180, 180, 180);
+    border-right: 1px solid rgb(180, 180, 180);
+    border-left: 1px solid rgb(180, 180, 180);
+    border-bottom: 1px solid rgb(238, 238, 238);
+}
+
+input[type=submit] {
+    background-color: rgb(131, 177, 131);
+    color: white;
+    padding: 7px 20px 7px 20px;
+    border: none;
+    cursor: pointer;
+    font-family: helvetica;
+    font-size:15px;
