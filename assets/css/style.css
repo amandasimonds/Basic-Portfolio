@@ -29,7 +29,6 @@ nav{
 
 navlinks{
     font-family: helvetica;
-    font-size: 18px;
     color: rgb(163, 162, 162);
     line-height: 60px;
     letter-spacing: 1px;
@@ -40,16 +39,16 @@ navlinks{
 
 a:link, a:visited{
     font-family: helvetica;
-    font-size: 16px;
+    font-size: 14px;
     letter-spacing: 1px;
-    color: rgb(163, 162, 162);
+    color: gray;
     text-decoration: none;
 }
 
 a:hover{
     font-family: helvetica;
-    font-size: 16px;
-    color: rgb(131, 177, 131);
+    font-size: 14px;
+    color: rgb(21, 95, 255);
     text-decoration: none;
 }
 
@@ -123,7 +122,7 @@ h2{
 }
 
 input[type=submit] {
-    background-color: rgb(131, 177, 131);
+    background-color: rgb(21, 95, 255);
     color: white;
     padding: 7px 20px 7px 20px;
     border: none;
@@ -135,29 +134,22 @@ input[type=submit] {
 /*Portfolio*/
 
 #portfolio{
-    margin: 20px;
-    width: 250px;
+    display: block;
+  max-width:350px;
+  width: auto;
+  height: auto;
 }
 
 .box{
-    position: relative;
-    display: inline-block; /* Make the width of box same as image */
+    width:370px;
+    height:auto;
+    padding:10px;
+    border: 1px solid darkgray;
+    margin:20px;
+    float:left;
 }
 .text{
-    position: absolute;
-    font-family: Georgia;
-    background-color: rgb(131, 177, 131);
-    color:white;
-    z-index: 999;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    margin: 0 auto;
-    left: 0;
-    right: 0;
-    opacity: 0.88;
-    top: 67%; /* Adjust this value to move the positioned div up and down */
-    text-align: center;
-    width: 250px; /* Set the width of the positioned div */
+    font-family: verdana;
 }
 
 /*
