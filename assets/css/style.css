@@ -1,51 +1,41 @@
 body{
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-    background-image: url("../images/leaves.png")
+    background-image: url("../images/leaves.png");
 }
 
 /*Header, Main, and Nav Bar*/
 
 h1{
-    font-family: 'Georgia';
-    font-size: 25px;
-    font-weight: ;
-    color: white;
-    background-color: rgb(131, 177, 131);
-    padding: 20px;
-    width: 250px;
+    font-family: 'helvetica';
+    font-size: 30px;
+    letter-spacing: 1px;
+    color: rgb(21, 95, 255);
     text-align: center;
     float: left;
     position: relative;
-    top:-20px;
-    height:30px;
-    left: 350px;
-    z-index: ;
+    left:40px;
 }
 
 nav{
     background-color: white;
     border-bottom: 1px solid rgb(192, 192, 192);
-    width: 1500px;
+    width: 100%;
     text-align: right;
     float: right;
-    box-sizing: ;
     position: relative;
     top: -10px;
     height: 70px;
-    z-index: ;
 }
 
 navlinks{
     font-family: helvetica;
     font-size: 18px;
     color: rgb(163, 162, 162);
-    line-height: 25px;
+    line-height: 60px;
     letter-spacing: 1px;
-    padding-right: 340px;
-    padding-top: 150px;
-    padding-bottom:20px;
     position: relative;
-    top:20px;
+    top: 10px;
+    right: 40px;
 }
 
 a:link, a:visited{
@@ -64,26 +54,28 @@ a:hover{
 }
 
 main{
-    width:760px;
+    width:1000px;
     clear: both;
     background-color: white;
-    border: 1px solid rgb(192, 192, 192);
+    border: 0px solid rgb(192, 192, 192);
     position: relative;
-    left: 200px;
+    left:40px;
     top:35px;
     padding-left: 30px;
     padding-right: 30px;
     padding-bottom: 30px;
-    font-family: helvetica;
+    font-family: calibri;
     color: rgb(75, 74, 74);
-    font-size:16px;
+    font-size:14px;
+    letter-spacing:1px;
+    float: left;
 }
 
 h2{
-    font-family: 'Georgia';
+    font-family: 'helvetica';
     font-size: 25px;
-    font-weight: ;
-    color: rgb(131, 177, 131);
+    letter-spacing: 1px;
+    color: rgb(21, 95, 255);
 }
 
 /* About Me */
@@ -167,3 +159,169 @@ input[type=submit] {
     text-align: center;
     width: 250px; /* Set the width of the positioned div */
 }
+
+/*
+  These rules take effect when the browser's width
+  is either 768px or less.
+*/
+
+@media screen and (max-width: 980px) {
+    
+    body {
+        width: 100%;
+    }
+
+    nav {
+        width:90%;
+        left:15px;
+        float: left;
+    }
+
+    .media {
+        margin-right: 15px;
+        position: relative;
+        top:-10px;
+    }
+
+    h1 {
+        left: 0px;
+    }
+  
+    .wrapper {  
+      width: 90%;
+      padding: 20px;
+      float: left;
+      /* display: flex;
+      align-items: center;
+      justify-content: center; */
+    }
+  
+    .container {
+        width: 100%;
+        margin: 0px auto;
+        float: left;
+    }
+
+    main { 
+    width: 80%;
+    display: inline-block;
+    margin: 0 auto;
+    position: relative;
+    left: 10px;
+    top:35px;
+    float: left;
+    }
+
+} 
+
+@media screen and (max-width: 768px) {
+    
+    body {
+        width: 100%;
+    }
+
+    nav {
+        width:90%;
+        left:15px;
+    }
+
+    .media {
+        width:;
+        margin-right: 15px;
+        position: relative;
+        top:-10px;
+    }
+
+    h1 {
+        left: 0px;
+    }
+  
+    .wrapper {  
+      width: 90%;
+      padding: 20px;
+      float: left;
+    }
+  
+    .container {
+        width: 100%;
+        margin: 0px auto;
+        float: left;
+    }
+
+    main { 
+    width: 80%;
+    display: inline-block;
+    margin: 0 auto;
+    position: relative;
+    left: 10px;
+    top:35px;
+    float: left;
+    }
+
+} 
+
+@media screen and (max-width: 640px) {
+    
+    body {
+        width: 100%;
+    }
+
+    nav {
+        width:90%;
+        left:15px;
+        height:40px;
+        float: none;
+        position: absolute;
+        margin: 0 auto;
+        top:70px;
+    }
+
+    .media {
+        width:90%;
+        margin-right: 25px;
+        position: relative;
+        top:-20px;
+        float:none;
+    }
+
+    navlinks, a:link, a:hover, a:visited, a:active {
+        padding: 10px ;
+        text-align: center;
+        margin: 0px auto;
+    }
+
+    h1 {
+        padding:8px;
+        width:100%;
+        position: absolute;
+        float: none;
+        margin:0px auto;
+        top:-60px;
+    }
+  
+    .wrapper {  
+      width: 90%;
+      padding: 20px;
+      float: left;
+      /* display: flex;
+      align-items: center;
+      justify-content: center; */
+    }
+  
+    .container {
+        width: 100%;
+        margin: 0px auto;
+        float: left;
+    }
+
+    main { 
+    width: 80%;
+    display: inline-block;
+    margin: 0 auto;
+    position: absolute;
+    left: 10px;
+    top:110px;
+    float: left;
+    }
+
+} 
