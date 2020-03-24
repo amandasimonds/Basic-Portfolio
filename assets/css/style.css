@@ -52,6 +52,14 @@ a:hover{
     text-decoration: none;
 }
 
+.linkNames{
+    font-family: helvetica;
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: gray;
+    text-decoration: none;
+}
+
 main{
     width:90%;
     clear: both;
